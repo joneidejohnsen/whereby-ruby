@@ -16,6 +16,7 @@ module Whereby
       Meeting.new(whereby_request(:post, "meetings", options))
     end
 
+    # DELETE /v1/meetings/:id
     def delete_meeting(id)
       whereby_request(:delete, "meetings/#{id.to_s}")
     end
@@ -37,9 +38,9 @@ module Whereby
       if [200, 201].include? result.code
         JSON.parse(result.body) # Create / Get
       elsif result.code == 204
-        true  # Delete
+        true # Delete
       else
-        raise WherebyError.new(error(result.code))
+        raise WherebyError.new error(result.code)
       end
     end
 
