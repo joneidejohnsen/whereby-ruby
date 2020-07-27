@@ -37,4 +37,4 @@ jobs:
         gem build *.gemspec
         gem push *.gem
       env:
-        RUBYGEMS_AUTH_TOKEN: "Bearer ${{secrets.RUBYGEMS_AUTH_TOKEN}}"
+        RUBYGEMS_AUTH_TOKEN: "${{secrets.RUBYGEMS_AUTH_TOKEN}}"
