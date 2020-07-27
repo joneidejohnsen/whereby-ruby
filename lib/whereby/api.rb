@@ -52,8 +52,8 @@ module Whereby
 
     def headers
       {
-          'Content-type' => 'application/json',
-          'Bearer' => Whereby.api_key
+          "Content-type" => "application/json",
+          "Authorization" => "Bearer #{Whereby.api_key}"
       }
     end
   end
