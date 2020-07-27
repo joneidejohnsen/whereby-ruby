@@ -1,4 +1,7 @@
+require 'whereby/configuration'
 require 'whereby/version'
+require 'whereby/element'
+require 'whereby/meeting'
 require 'whereby/api'
 
 module Whereby
