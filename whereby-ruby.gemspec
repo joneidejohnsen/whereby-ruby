@@ -11,7 +11,7 @@ Gem::Specification.new do |spec|
 
   spec.summary       = "A Ruby Whereby Wrapper"
   spec.description   = "Easily use Whereby's HTTP API using this gem"
-  spec.homepage      = "https://www.google.com"
+  spec.homepage      = "https://github.com/poption/whereby-ruby"
   spec.license       = "MIT"
 
   spec.required_ruby_version = Gem::Requirement.new(">= 2.3.0")
@@ -19,7 +19,7 @@ Gem::Specification.new do |spec|
   spec.metadata["allowed_push_host"] = "TODO: Set to 'http://mygemserver.com'"
 
   spec.metadata["homepage_uri"] = spec.homepage
-  spec.metadata["source_code_uri"] = "https://www.google.com"
+  spec.metadata["source_code_uri"] = "https://github.com/poption/whereby-ruby"
   spec.metadata["changelog_uri"] = "https://www.google.com"
 
   # Specify which files should be added to the gem when it is released.
