@@ -43,6 +43,8 @@ api.create_meeting(options)         # POST    /v1/meetings
 api.delete_meeting(id)              # DELETE  /v1/meetings/:id
 ```
 
+Read more about the different endpoints at https://whereby.dev/http-api/
+
 ## Contributing
 
 Bug reports and pull requests are welcome on GitHub at https://github.com/poption/whereby-ruby.
