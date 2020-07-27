@@ -1,8 +1,8 @@
-name: Push Wrapper to Ruby Gems
+name: Push Wrapper to Ruby Gems & GPR
 
 on:
   push:
-    branches: [ master ]
+    tags: 'v*'
 
 jobs:
   build:
