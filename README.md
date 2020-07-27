@@ -23,6 +23,7 @@ Or install it yourself as:
 If using Rails put the following into a initializer. If just Ruby, run this before trying to use the API.
 
 ```ruby
+require 'whereby'
 Whereby.configure do |config|
   config.api_key = 'YOUR_KEY_HERE'
 end
