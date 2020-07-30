@@ -53,7 +53,7 @@ module Whereby
       return 'Access token is missing or invalid' if code == 401
       return 'The requested resource does not exist' if code == 404
 
-      "The API resulted in a unknown status code #{code}"
+      "The API resulted in an unknown status code: #{code}"
     end
 
   end
