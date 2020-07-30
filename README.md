@@ -29,7 +29,7 @@ Whereby.configure do |config|
 end
 ```
 
-### Instantiate an API object.
+### Instantiate an API object
 
 ```ruby
 api = Whereby::Api.new
@@ -42,8 +42,12 @@ api.meeting(id)                     # GET     /v1/meetings/:id
 api.create_meeting(options)         # POST    /v1/meetings
 api.delete_meeting(id)              # DELETE  /v1/meetings/:id
 ```
+Read more about the different endpoints and options at https://whereby.dev/http-api/
 
-Read more about the different endpoints at https://whereby.dev/http-api/
+### Example creating a meeting
+```ruby
+api.create_meeting(room_name_prefix: '/example', room_mode: "normal", start_date: "2020-08-01T00:00:00Z", end_date: "2020-08-01T15:00:00Z", fields: ["hostRoomUrl"])
+```
 
 ## Contributing
 
