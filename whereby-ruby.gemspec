@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["tech@poption.com"]
 
   spec.summary       = "A Ruby Whereby Wrapper"
-  spec.description   = "Easily use Whereby's HTTP API using this gem"
+  spec.description   = "Easily use Whereby's HTTP API to create video rooms and conferences"
   spec.homepage      = "https://github.com/poption/whereby-ruby"
   spec.license       = "MIT"
 
