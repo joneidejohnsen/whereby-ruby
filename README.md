@@ -1,6 +1,6 @@
 # Whereby Ruby HTTP API Wrapper
 
-Just a simple Whereby HTTP API wrapper written for Ruby projects.
+This gem is a very simple [Whereby](https://whereby.com) HTTP API wrapper written for Ruby/Rails projects, to easly create video meetings and conferences. 
 
 ## Installation
 
@@ -20,12 +20,12 @@ Or install it yourself as:
 
 ## Usage
 
-If using Rails put the following into a initializer. If just Ruby, run this before trying to use the API.
+If using Rails put the following into an initializer. If you use plain Ruby, run this code before trying to use the API.
 
 ```ruby
 require 'whereby'
 Whereby.configure do |config|
-  config.api_key = 'YOUR_KEY_HERE'
+  config.api_key = ENV['YOUR_KEY']
 end
 ```
 
