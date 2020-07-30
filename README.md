@@ -25,9 +25,11 @@ If using Rails put the following into an initializer. If you use plain Ruby, run
 ```ruby
 require 'whereby'
 Whereby.configure do |config|
-  config.api_key = ENV['YOUR_KEY']
+  config.api_key = "Your api key!"
 end
 ```
+By default, this gem try to read the `WHEREBY_API_KEY` environment variable and use that as api key. The above statement is therefore equivalent to setting this environment variable.
+
 
 ### Instantiate an API object
 
