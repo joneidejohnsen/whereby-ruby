@@ -2,7 +2,7 @@ module Whereby
   class Element
     def initialize(attrs = {})
       # Only set attributes if the method exists
-      attrs.each{ |k,v| send("#{k.underscore}=", v) if respond_to?("#{k.underscore}") }
+      attrs.each{ |k,v| send("#{k.whereby_underscore}=", v) if respond_to?(k.whereby_underscore.to_s) }
     end
 
     def to_h
